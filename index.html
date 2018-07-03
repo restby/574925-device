@@ -8,8 +8,147 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="container">
+        <h1 class="visually-hidden">Магазин DEVICE</h1>
+        <div class="page-header__left-col">
+          <span class="header-logo">DEVICE</span>
+          <form class="search-form" action="">
+            <input class="search-form__input" type="text">
+          </form>
+          <a class="open-menu" href="#">КАТАЛОГ ТОВАРОВ</a>
+        </div>
+        <div class="page-header__right-col">
+          <ul class="user-list">
+            <li class="user-list__item">
+              <a href="" class="user-list__link">Войти</a>
+            </li>
+          </ul>
+          <ul class="cart-list">
+            <li class="cart-list__item">
+              <a class="cart-list__link" href="#">Сравнить</a>
+            </li>
+            <li class="cart-list__item">
+              <a class="cart-list__link" href="#">Корзина</a>
+            </li>
+          </ul>
+          <nav class="main-navigation">
+            <ul class="navigation-list">
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__link  navigation-list__link_delivery">ДОСТАВКА</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__link  navigation-list__link_warranty">ГАРАНТИЯ</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="#" class="navigation-list__link  navigation-list__link_contacts">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <section class="menu">
+          <h2 class="visually-hidden">Список разделов каталога</h2>
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Виртуальная реальность</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Моноподы для селфи</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Экшн-камеры</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Фитнес-браслеты</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Умные часы</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </section>
+        <button class="page-header__menu-line" type="button"></button>
+      </div>
     </header>
     <main>
+      <div class="container">
+        <section class="slider">
+          <h2 class="visually-hidden">Рекламные слайды</h2>
+          <ul class="list-slides">
+            <li class="list-slides__item  list-slides__item_slide1">
+              <span class="list-slides__item-number">01</span>
+              <h3 class="list-slides__item-title">Делай селфи,<br>
+              как Бен Стиллер!</h3>
+              <p class="list-slides__item-desc">Самая длинная палка для селфи доступна в нашем магазине.<br>
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a class="list-slides__item-link" href="#">Подробнее</a>
+              <table class="list-slides__item-table">
+                <tr class="list-slides__item-tr1">
+                  <td class="list-slides__item-td  list-slides__item-td_top">8.5 м</td>
+                  <td class="list-slides__item-td  list-slides__item-td_top">5 кг</td>
+                  <td class="list-slides__item-td  list-slides__item-td_top">Карбон</td>
+                </tr>
+                <tr class="list-slides__item-tr2">
+                  <td class="list-slides__item-td  list-slides__item-td_bottom">Длина палки</td>
+                  <td class="list-slides__item-td  list-slides__item-td_bottom">Вес палки</td>
+                  <td class="list-slides__item-td  list-slides__item-td_bottom">Материал</td>
+                </tr>
+              </table>
+            </li>
+            <li class="list-slides__item  list-slides__item_slide2">
+              <span class="list-slides__item_number">02</span>
+              <h3 class="list-slides__item-title">Худеем<br>
+              правильно!</h3>
+              <p class="list-slides__item-desc">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+              не пропускать занятия и соблюдать диету.</p>
+              <a class="list-slides__item-link" href="#">Подробнее</a>
+              <table class="list-slides__item-table">
+                <tr class="list-slides__item-tr1">
+                  <td class="list-slides__item-td  list-slides__item-td_top">48 часов</td>
+                </tr>
+                <tr class="list-slides__item-tr2">
+                  <td class="list-slides__item-td  list-slides__item-td_bottom">без подзарядки</td>
+                </tr>
+              </table>
+            </li>
+            <li class="list-slides__item  list-slides__item_slide3">
+              <span class="list-slides__item_number">03</span>
+              <h3 class="list-slides__item-title">Порхает как бабочка,<br>
+              жалит как пчела!</h3>
+              <p class="list-slides__item-desc">Этот обычный, на первый взгляд квадрокоптер оснащен<br>
+              мощным лазером, замасированным под стандартную камеру.</p>
+              <a class="list-slides__item-link" href="#">Подробнее</a>
+              <table class="list-slides__item-table">
+                <tr class="list-slides__item-tr1">
+                  <td class="list-slides__item-td  list-slides__item-td_top">800 м</td>
+                  <td class="list-slides__item-td  list-slides__item-td_top">50 м</td>
+                </tr>
+                <tr class="list-slides__item-tr2">
+                  <td class="list-slides__item-td  list-slides__item-td_bottom">Дальность полета</td>
+                  <td class="list-slides__item-td  list-slides__item-td_bottom">Радиус поражения</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+          <ul class="list-controls">
+            <li class="list-controls__item  list-controls__item_1">
+              <button class="list-controls__toggle  list-controls__toggle_1  list-controls__toggle_active" type="button" aria-label="переключатель на слайд №1"></button>
+            </li>
+            <li class="list-controls__item  list-controls__item_2">
+              <button class="list-controls__toggle  list-controls__toggle_2" type="button" aria-label="переключатель на слайд №2"></button>
+            </li>
+            <li class="list-controls__item  list-controls__item_3">
+              <button class="list-controls__toggle  list-controls__toggle_3" type="button" aria-label="переключатель на слайд №3"></button>
+            </li>
+          </ul>
+        </section>
+        <section class="catalog">
+          <h2 class="visually-hidden">
+            ul.catalog__list>li.catalog__item
+          </h2>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
     </footer>
