@@ -291,8 +291,8 @@
           <div class="about__right-col">
             <h3 class="about__title">Контакты</h3>
             <p class="about__text  about__text_contacts">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <p class="map-inner">
-              <img class="static-map" width="560" height="222" src="img/map-min-img.jpg" alt="">
+            <p class="map-min-inner">
+              <img class="static-min-map" width="560" height="222" src="img/map-min-img.jpg" alt="г. Москва, улица Строителей, д. 15">
             </p>
           </div>
         </section>
@@ -379,6 +379,31 @@
         </div>
       </div>
     </footer>
+    <div class="modal-write">
+      <h2 class="visually-hidden">Форма отправки письма</h2>
+      <button class="btn btn_close-modal-write" type="button" aria-label="кнопка закрыть форму отправки письма">Закрыть</button>
+      <form class="form-write" action="https://echo.htmlacademy.ru" method="POST" aria-label="форма отправки письма">
+        <p class="form-write__item">
+          <label class="form-write__title" for="name">Ваше имя:</label>
+          <input class="form-write__input" type="text" id="name" name="name" placeholder="Имя Фамилия" aria-label="поле для ввода вашего имени и фамилии">
+        </p>
+        <p class="form-write__item">
+          <label class="form-write__title" for="email">Ваш e-mail:</label>
+          <input class="form-write__input" type="text" id="email" name="email" placeholder="email@example.com" aria-label="поле для ввода вашего электронного ящика">
+        </p>
+        <p class="form-write__item">
+          <label class="form-write__title" for="mail-text">Текст письма:</label>
+          <textarea class="form-write__input  form-write__input_area" name="mail-text" id="mail-text" cols="50" rows="5" placeholder="В свободной форме" aria-label="поле для ввода текста вашего письма"></textarea>
+        </p>
+        <button class="link link__submit-form-write" type="submit" aria-label="кнопка отправить ваше письмо">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-map">
+      <button class="btn btn_close-modal-map" type="button" aria-label="кнопка закрыть карту">Закрыть</button>
+      <p class="map-big-inner">
+        <img class="static-big-map" width="960" height="559" src="img/map-big-img.jpg" alt="г. Москва, улица Строителей, д. 15">
+      </p>
+    </div>
     <script src="js/script.js"></script>
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
