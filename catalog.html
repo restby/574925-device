@@ -108,154 +108,151 @@
           </ul>
         </section>
       </div>
-      <!-- <div></div>
-      <div></div>
-      <div></div> -->
-
-
-        <form class="form-filter" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма фильтра товаров по параметрам">
-          <span class="form-filter__text">ФИЛЬТР:</span>
-          <fieldset class="form-filter__range">
-            <legend class="form-filter__title">Стоимость</legend>
-            <div class="range-filter">
-              <div class="range-filter__controls">
-                <div class="range-filter__scale">
-                  <div class="range-filter__bar"></div>
+      <div class="top-line"><!-- ГРАДИЕНТ КАРЛ,ГРАДИЕНТ!!! -->
+        <div class="container">
+          <h2 class="form-filter__text">ФИЛЬТР:</h2>
+          <form class="form-sort" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма сортировки товаров по параметрам">
+            <h2 class="form-sort-text">СОРТИРОВКА:</h2>
+            <ul class="list-sort">
+              <li class="list-sort__item  list-sort__item_price">
+                <a class="list-sort__link" href="#" aria-label="отсортировать по цене">По цене</a>
+              </li>
+              <li class="list-sort__item  list-sort__item_type">
+                <a class="list-sort__link" href="#" aria-label="отсортировать по типу">По типу</a>
+              </li>
+              <li class="list-sort__item  list-sort__item_function">
+                <a class="list-sort__link" href="#" aria-label="отсортировать по популярности">По популярности</a>
+              </li>
+              <li class="ist-sort__item  list-sort__item_dir-up">
+                <a class="list-sort__link" href="#" aria-label="отсортировать по возрастанию">
+                  <span class="visually-hidden">up</span>
+                  <svg class="list-sort__icon  list-sort__icon_dir-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="#000000">
+                    <path d="M5.5 0L0 10h11z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="ist-sort__item  list-sort__item_dir-down">
+                <a class="list-sort__link" href="#" aria-label="отсортировать по убыванию">
+                  <span class="visually-hidden">down</span>
+                  <svg class="list-sort__icon  list-sort__icon_dir-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="#000000">
+                    <path d="M5.5 10L0 0h11"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <div class="catalog-content"><!-- ГРАДИЕНТ КАРЛ,ГРАДИЕНТ!!! -->
+        <div class="container">
+          <form class="form-filter" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма фильтра товаров по параметрам">
+            <fieldset class="form-filter__range">
+              <legend class="form-filter__title">Стоимость</legend>
+              <div class="range-filter">
+                <div class="range-filter__controls">
+                  <div class="range-filter__scale">
+                    <div class="range-filter__bar"></div>
+                  </div>
+                  <div class="range-filter__toggle range-filter__toggle_min"></div>
+                  <div class="range-filter__toggle range-filter__toggle_max"></div>
                 </div>
-                <div class="range-filter__toggle range-filter__toggle_min"></div>
-                <div class="range-filter__toggle range-filter__toggle_max"></div>
+                <div class="range-filter__price-inputs">
+                  <input name="range-filter__input range-filter__inut_min-price" type="text" placeholder="0" aria-label="поле для ввода минимальной цены">
+                  <input name="range-filter__input range-filter__inut_max-price" type="text" placeholder="5000" aria-label="поле для ввода максимальной цены">
+                </div>
               </div>
-              <div class="range-filter__price-inputs">
-                <input name="range-filter__input range-filter__inut_min-price" type="text" placeholder="0" aria-label="поле для ввода минимальной цены">
-                <input name="range-filter__input range-filter__inut_max-price" type="text" placeholder="5000" aria-label="поле для ввода максимальной цены">
-              </div>
-            </div>
-          </fieldset>
-          <fieldset class="form-filter__color">
-            <legend class="form-filter__title">Цвет</legend>
-            <ul class="list-color">
-              <li class="list-color__item  list-color__item_black">
-                <input class="visually-hidden  filter__input  list-color__input-checkbox" type="checkbox" id="black" name="черный" aria-label="опция для выбора черного цвета" checked>
-                <label class="list-color__option" for="black">Черный</label>
+            </fieldset>
+            <fieldset class="form-filter__color">
+              <legend class="form-filter__title">Цвет</legend>
+              <ul class="list-color">
+                <li class="list-color__item  list-color__item_black">
+                  <input class="visually-hidden  filter__input  list-color__input-checkbox" type="checkbox" id="black" name="черный" aria-label="опция для выбора черного цвета" checked>
+                  <label class="list-color__option" for="black">Черный</label>
+                </li>
+                <li class="list-color__item  list-color__item_white">
+                  <input class="visually-hidden  filter__input  list-color__input-checkbox" type="checkbox" id="white" name="белый" aria-label="опция для выбора белого цвета">
+                  <label class="list-color__option" for="white">Белый</label>
+                </li>
+                <li class="list-color__item  list-color__item_blue">
+                  <input class="visually-hidden  filter__input  list-color__input-checkbox" type="checkbox" id="blue" name="синий" aria-label="опция для выбора синего цвета" checked>
+                  <label class="list-color__option" for="blue">Синий</label>
+                </li>
+                <li class="list-color__item  list-color__item_red">
+                  <input class="visually-hidden  filter__input  list-color__input-checkbox" type="checkbox" id="red" name="красный" aria-label="опция для выбора красного цвета" checked>
+                  <label class="list-color__option" for="red">Красный</label>
+                </li>
+                <li class="list-color__item  list-color__item_pink">
+                  <input class="visually-hidden  filter__input  list-color__input-checkbox" type="checkbox" id="pink" name="розовый" aria-label="опция для выбора розового цвета">
+                  <label class="list-color__option" for="pink">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-filter__bluetooth">
+              <legend class="form-filter__title">Bluetooth</legend>
+              <ul class="list-bluetooth">
+                <li class="list-bluetooth__item  list-bluetooth__item_yes">
+                  <input class="visually-hidden  filter__input  list-bluetooth__input-radio" type="radio" name="presence" value="Есть" id="yes" aria-label="опция выбора с наличием bluetooth">
+                  <label class="list-bluetooth__option" for="yes">Есть</label>
+                </li>
+                <li class="list-bluetooth__item  list-bluetooth__item_no">
+                  <input class="visually-hidden  filter__input  list-bluetooth__input-radio" type="radio" name="presence" value="нет" id="no" aria-label="опция выбора без наличия bluetooth" checked>
+                  <label class="list-bluetooth__option" for="no">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="form-filter__btn-submit" type="submit" aria-label="кнопка для применения опций сортировки">Показать</button>
+          </form>
+          <section class="results">
+            <h2 class="visually-hidden">Результат выбора</h2>
+            <ul class="list-results">
+              <li class="list-results__item">
+                <img class="list-results__img  list-results__img_1" width="360" height="380" src="img/item-1-img.jpg" alt="изображение товара №1">
+                <div class="list-results__item-inner">
+                  <a href="#" class="list-results__link" aria-label="ссылка для перехода на страницу товара №1">Любительская селфи-палка</a>
+                  <span class="list-results__price">500 руб.</span>
+                </div>
               </li>
-              <li class="list-color__item  list-color__item_white">
-                <input class="visually-hidden  filter__input  list-color__input-checkbox" type="checkbox" id="white" name="белый" aria-label="опция для выбора белого цвета">
-                <label class="list-color__option" for="white">Белый</label>
+              <li class="list-results__item">
+                <img class="list-results__img  list-results__img_2" width="360" height="380" src="img/item-2-img.jpg" alt="изображение товара №2">
+                <div class="list-results__item-inner">
+                  <a href="#" class="list-results__link" aria-label="ссылка для перехода на страницу товара №2">Профессиональная селфи-палка </a>
+                  <span class="list-results__price">1 500 руб.</span>
+                </div>
               </li>
-              <li class="list-color__item  list-color__item_blue">
-                <input class="visually-hidden  filter__input  list-color__input-checkbox" type="checkbox" id="blue" name="синий" aria-label="опция для выбора синего цвета" checked>
-                <label class="list-color__option" for="blue">Синий</label>
+              <li class="list-results__item">
+                <img class="list-results__img  list-results__img_3" width="360" height="380" src="img/item-3-img.jpg" alt="изображение товара №3">
+                <div class="list-results__item-inner">
+                  <a href="#" class="list-results__link" aria-label="ссылка для перехода на страницу товара №3">Непотопляемая селфи-палка</a>
+                  <span class="list-results__price">2 500 руб.</span>
+                </div>
               </li>
-              <li class="list-color__item  list-color__item_red">
-                <input class="visually-hidden  filter__input  list-color__input-checkbox" type="checkbox" id="red" name="красный" aria-label="опция для выбора красного цвета" checked>
-                <label class="list-color__option" for="red">Красный</label>
-              </li>
-              <li class="list-color__item  list-color__item_pink">
-                <input class="visually-hidden  filter__input  list-color__input-checkbox" type="checkbox" id="pink" name="розовый" aria-label="опция для выбора розового цвета">
-                <label class="list-color__option" for="pink">Розовый</label>
+              <li class="list-results__item">
+                <img class="list-results__img  list-results__img_4" width="360" height="380" src="img/item-4-img.jpg" alt="изображение товара №4">
+                <div class="list-results__item-inner">
+                  <a href="#" class="list-results__link" aria-label="ссылка для перехода на страницу товара №4">Селфи-палка «Следуй за мной»</a>
+                  <span class="list-results__price">4 900 руб.</span>
+                </div>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="form-filter__bluetooth">
-            <legend class="form-filter__title">Bluetooth</legend>
-            <ul class="list-bluetooth">
-              <li class="list-bluetooth__item  list-bluetooth__item_yes">
-                <input class="visually-hidden  filter__input  list-bluetooth__input-radio" type="radio" name="presence" value="Есть" id="yes" aria-label="опция выбора с наличием bluetooth">
-                <label class="list-bluetooth__option" for="yes">Есть</label>
-              </li>
-              <li class="list-bluetooth__item  list-bluetooth__item_no">
-                <input class="visually-hidden  filter__input  list-bluetooth__input-radio" type="radio" name="presence" value="нет" id="no" aria-label="опция выбора без наличия bluetooth" checked>
-                <label class="list-bluetooth__option" for="no">Нет</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="form-filter__btn-submit" type="submit" aria-label="кнопка для применения опций сортировки">Показать</button>
-        </form>
-
-
-        <form class="form-sort" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма сортировки товаров по параметрам">
-          <span class="form-sort-text">СОРТИРОВКА:</span>
-          <ul class="list-sort">
-            <li class="list-sort__item  list-sort__item_price">
-              <a class="list-sort__link" href="#" aria-label="отсортировать по цене">По цене</a>
+          </section>
+          <ul class="list-pagination">
+            <li class="list-pagination__item  list-pagination__item_prev" aria-label="переход на предыдущую страницу">
+              <a class="list-pagination__link" href="#">НАЗАД</a>
             </li>
-            <li class="list-sort__item  list-sort__item_type">
-              <a class="list-sort__link" href="#" aria-label="отсортировать по типу">По типу</a>
+            <li class="list-pagination__item  list-pagination__item_1">
+              <a class="list-pagination__link  list-pagination__link_active" aria-label="текущая страница">1</a>
             </li>
-            <li class="list-sort__item  list-sort__item_function">
-              <a class="list-sort__link" href="#" aria-label="отсортировать по популярности">По популярности</a>
+            <li class="list-pagination__item  list-pagination__item_2" aria-label="переход на страницу №2">
+              <a class="list-pagination__link" href="#">2</a>
             </li>
-            <li class="ist-sort__item  list-sort__item_dir-up">
-              <a class="list-sort__link" href="#" aria-label="отсортировать по возрастанию">
-                <span class="visually-hidden">up</span>
-                <svg class="list-sort__icon  list-sort__icon_dir-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="#000000">
-                  <path d="M5.5 0L0 10h11z"/>
-                </svg>
-              </a>
+            <li class="list-pagination__item  list-pagination__item_3" aria-label="переход на страницу №3">
+              <a class="list-pagination__link" href="#">3</a>
             </li>
-            <li class="ist-sort__item  list-sort__item_dir-down">
-              <a class="list-sort__link" href="#" aria-label="отсортировать по убыванию">
-                <span class="visually-hidden">down</span>
-                <svg class="list-sort__icon  list-sort__icon_dir-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" fill="#000000">
-                  <path d="M5.5 10L0 0h11"/>
-                </svg>
-              </a>
+            <li class="list-pagination__item  list-pagination__item_next" aria-label="переход на следующую страницу">
+              <a class="list-pagination__link" href="#">ВПЕРЕД</a>
             </li>
           </ul>
-        </form>
-
-
-      <div class="container">
-        <section class="results">
-          <h2 class="visually-hidden">Результат выбора</h2>
-          <ul class="list-results">
-            <li class="list-results__item">
-              <img class="list-results__img  list-results__img_1" width="360" height="380" src="img/item-1-img.jpg" alt="изображение товара №1">
-              <div class="list-results__item-inner">
-                <a href="#" class="list-results__link" aria-label="ссылка для перехода на страницу товара №1">Любительская селфи-палка</a>
-                <span class="list-results__price">500 руб.</span>
-              </div>
-            </li>
-            <li class="list-results__item">
-              <img class="list-results__img  list-results__img_2" width="360" height="380" src="img/item-2-img.jpg" alt="изображение товара №2">
-              <div class="list-results__item-inner">
-                <a href="#" class="list-results__link" aria-label="ссылка для перехода на страницу товара №2">Профессиональная селфи-палка </a>
-                <span class="list-results__price">1 500 руб.</span>
-              </div>
-            </li>
-            <li class="list-results__item">
-              <img class="list-results__img  list-results__img_3" width="360" height="380" src="img/item-3-img.jpg" alt="изображение товара №3">
-              <div class="list-results__item-inner">
-                <a href="#" class="list-results__link" aria-label="ссылка для перехода на страницу товара №3">Непотопляемая селфи-палка</a>
-                <span class="list-results__price">2 500 руб.</span>
-              </div>
-            </li>
-            <li class="list-results__item">
-              <img class="list-results__img  list-results__img_4" width="360" height="380" src="img/item-4-img.jpg" alt="изображение товара №4">
-              <div class="list-results__item-inner">
-                <a href="#" class="list-results__link" aria-label="ссылка для перехода на страницу товара №4">Селфи-палка «Следуй за мной»</a>
-                <span class="list-results__price">4 900 руб.</span>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <ul class="list-pagination">
-          <li class="list-pagination__item  list-pagination__item_prev" aria-label="переход на предыдущую страницу">
-            <a class="list-pagination__link" href="#">НАЗАД</a>
-          </li>
-          <li class="list-pagination__item  list-pagination__item_1">
-            <a class="list-pagination__link  list-pagination__link_active" aria-label="текущая страница">1</a>
-          </li>
-          <li class="list-pagination__item  list-pagination__item_2" aria-label="переход на страницу №2">
-            <a class="list-pagination__link" href="#">2</a>
-          </li>
-          <li class="list-pagination__item  list-pagination__item_3" aria-label="переход на страницу №3">
-            <a class="list-pagination__link" href="#">3</a>
-          </li>
-          <li class="list-pagination__item  list-pagination__item_next" aria-label="переход на следующую страницу">
-            <a class="list-pagination__link" href="#">ВПЕРЕД</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </main>
     <footer class="page-footer">
