@@ -1,17 +1,31 @@
 /*gloabal*/
+@font-face {
+    font-family: 'gilroylight';
+    src: url('../fonts/gilroylight-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroyextrabold';
+    src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
-/*  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;*/
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
   min-width: 1200px;
   margin: 0 auto;
   padding: 0;
   color: #000000;
+  padding-top: 40px;
 }
-a {
-  text-decoration: none;
-  color: #000000;
+.container {
+  width: 1160px;
+  margin: 0 auto;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -29,8 +43,228 @@ input[type="radio"].visually-hidden {
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
 }
-.container {
-  width: 1160px;
-  margin: 0 auto;
+a {
+  text-decoration: none;
+  color: #000000;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 /*gloabal*/
+/*header*/
+.page-header .container {
+  display: flex;
+  background-color: rgba(240, 197, 46, 0.5);
+  position: relative;
+  padding-top: 53px;
+  padding-left: 60px;
+  padding-right: 60px;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.logo {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.01em;
+}
+.logo_header {
+  position: absolute;
+  top: 0;
+  left: 57px;
+  margin-top: -23px;
+}
+.page-header__left-col {
+  width: 500px;
+  margin-right: 40px;
+  box-sizing: border-box;
+}
+.form-search {
+
+}
+.form-search__icon {
+
+}
+.form-search__input {
+
+}
+.form-search__input::placeholder {
+
+}
+.link_open-menu {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.2em;
+  position: relative;
+  padding-right: 32px;
+}
+.link_open-menu::after {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background-color: rgba(0,0,0,0.3);
+  right: 0;
+  top: 0;
+  margin-top: 8px;
+}
+.link_open-menu::before {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background-color: rgba(0,0,0,0.3);
+  right: 0;
+  top: 0;
+  margin-top: 8px;
+  transform: rotate(90deg);
+}
+
+.page-header__right-col {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 500px;
+  box-sizing: border-box;
+}
+.list-user {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  width: 260px;
+  margin-right: 20px;
+  margin-bottom: 45px;
+}
+.list-user__item {
+
+}
+.list-user__item_login {
+
+}
+.list-user__icon {
+
+}
+.list-user__icon_avatar {
+  margin-right: 13px;
+}
+.list-user__link {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+.list-user__link_enter {
+
+}
+
+.list-cart {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  width: 220px;
+  justify-content: space-between;/**/
+  box-sizing: border-box;
+  margin-bottom: 45px;
+}
+.list-cart__item {
+
+}
+.list-cart__item_compare {
+
+}
+.list-cart__icon {
+
+}
+.list-cart__icon_compare {
+  margin-right: 10px;
+}
+.list-cart__link {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+.list-cart__link_compare {
+
+}
+.list-cart__item_cart {
+
+}
+.list-cart__icon_cart {
+  margin-right: 11px;
+}
+.list-cart__link_cart {
+
+}
+.main-navigation {
+  width: 500px;
+  margin-bottom: 90px;
+}
+.list-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;/**/
+  box-sizing: border-box;
+}
+.list-navigation__item {
+
+}
+.list-navigation__item_delivery {
+  margin-right: 38px;
+}
+.list-navigation__link {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 0.2em;
+}
+.list-navigation__link_delivery {
+
+}
+
+.list-navigation__item_warranty {
+  margin-right: 114px;
+}
+.list-navigation__link_warranty {
+
+}
+
+.list-navigation__item_contacts {
+
+}
+.list-navigation__link_contacts {
+
+}
+.menu {
+  display: none;
+}
+
+
+
+
+.page-header__menu-line {
+  width: 100px;
+  height: 7px;
+  margin-bottom: 67px;
+  background-color: #ffffff;
+}
+/*header*/
