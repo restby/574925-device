@@ -19,6 +19,7 @@
             </svg>
             <input class="form-search__input" type="text"
             placeholder="Поиск по сайту" aria-label="поле ввода для поиска по сайту">
+            <button class="form-search__btn">Найти</button>
           </form>
           <a class="link  link_open-menu" href="#" aria-label="кнопка отображения разделов каталога">КАТАЛОГ ТОВАРОВ</a>
         </div>
@@ -34,17 +35,19 @@
           </ul>
           <ul class="list-cart">
             <li class="list-cart__item  list-cart__item_compare">
+              <a class="list-cart__link  list-cart__link_compare" href="#" aria-label="ссылка на страницу с выбраными для сравнения товарами">
               <svg class="list-cart__icon  list-cart__icon_compare" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#000000">
                 <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
               </svg>
-              <a class="list-cart__link  list-cart__link_compare" href="#" aria-label="ссылка на страницу с выбраными для сравнения товарами">Сравнить</a>
+            Сравнить</a>
             </li>
             <li class="list-cart__item  list-cart__item_cart">
+              <a class="list-cart__link  list-cart__link_cart" href="#" aria-label="ссылка для перехода на страницу корзины">
               <svg class="list-cart__icon  list-cart__icon_cart" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#000000">
                 <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/>
                 <path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
               </svg>
-              <a class="list-cart__link  list-cart__link_cart" href="#" aria-label="ссылка для перехода на страницу корзины">Корзина</a>
+            Корзина</a>
             </li>
           </ul>
           <nav class="main-navigation">
@@ -64,26 +67,38 @@
         </div>
         <section class="menu">
           <h2 class="visually-hidden">Список разделов каталога</h2>
-          <ul class="list-menu">
-            <li class="list-menu__item  list-menu__item_1">
-              <a class="list-menu__link" href="#" aria-label="ссылка для перехода на страницу раздела Виртуальная реальность">Виртуальная реальность</a>
-            </li>
-            <li class="list-menu__item  list-menu__item_2">
-              <a class="list-menu__link" href="#" aria-label="ссылка для перехода на страницу раздела Моноподы для селфи">Моноподы для селфи</a>
-            </li>
-            <li class="list-menu__item  list-menu__item_3">
-              <a class="list-menu__link" href="#" aria-label="ссылка для перехода на страницу раздела Экшн-камеры">Экшн-камеры</a>
-            </li>
-            <li class="list-menu__item  list-menu__item_4">
-              <a class="list-menu__link" href="#" aria-label="ссылка для перехода на страницу раздела Фитнес-браслеты">Фитнес-браслеты</a>
-            </li>
-            <li class="list-menu__item  list-menu__item_5">
-              <a class="menu-list__link" href="#" aria-label="ссылка для перехода на страницу раздела Умные часы">Умные часы</a>
-            </li>
-            <li class="list-menu__item  list-menu__item_6">
-              <a class="list-menu__link" href="#" aria-label="ссылка для перехода на страницу раздела Квадрокоптеры">Квадрокоптеры</a>
-            </li>
-          </ul>
+          <div class="menu__inner">
+            <div class="menu__left-col">
+              <ul class="list-menu">
+                <li class="list-menu__item">
+                  <a class="list-menu__link" href="#" aria-label="ссылка для перехода на страницу раздела Виртуальная реальность">Виртуальная реальность</a>
+                </li>
+                <li class="list-menu__item">
+                  <a class="list-menu__link" href="#" aria-label="ссылка для перехода на страницу раздела Моноподы для селфи">Моноподы для селфи</a>
+                </li>
+                <li class="list-menu__item">
+                  <a class="list-menu__link" href="#" aria-label="ссылка для перехода на страницу раздела Экшн-камеры">Экшн-камеры</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__midle-col">
+              <ul class="list-menu">
+                <li class="list-menu__item">
+                  <a class="list-menu__link" href="#" aria-label="ссылка для перехода на страницу раздела Фитнес-браслеты">Фитнес-браслеты</a>
+                </li>
+                <li class="list-menu__item">
+                  <a class="list-menu__link" href="#" aria-label="ссылка для перехода на страницу раздела Умные часы">Умные часы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__right-col">
+              <ul class="list-menu">
+                <li class="list-menu__item">
+                  <a class="list-menu__link" href="#" aria-label="ссылка для перехода на страницу раздела Квадрокоптеры">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </div>
     </header>
@@ -99,7 +114,7 @@
               как Бен Стиллер!</h3>
               <p class="list-slides__item-desc">Самая длинная палка для селфи доступна в нашем магазине.<br>
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a class="list-slides__item-link" href="#">Подробнее</a>
+              <a class="list-slides__item-link" href="#"></a>
               <table class="list-slides__item-table">
                 <tr class="list-slides__item-tr  list-slides__item_tr1">
                   <td class="list-slides__item-td  list-slides__item-td_top">8.5 м</td>
@@ -167,7 +182,7 @@
             <ul class="list-catalog">
               <li class="list-catalog__item">
                 <a class="list-catalog__link  list-catalog__link_1" href="#">
-                  <p class="list-catalog__img-inner">
+                  <p class="list-catalog__img-inner  list-catalog__img-inner_1">
                     <img class="list-catalog__img" width="97" height="55" src="img/popular-1-icon.min.svg" alt="Изображение раздела: Виртуальная реальность">
                   </p>
                   <h3 class="list-catalog__title">Виртуальная реальность</h3>
@@ -175,7 +190,7 @@
               </li>
               <li class="list-catalog__item">
                 <a class="list-catalog__link  list-catalog__link_2" href="#">
-                  <p class="list-catalog__img-inner">
+                  <p class="list-catalog__img-inner  list-catalog__img-inner_2">
                     <img class="list-catalog__img" width="86" height="117" src="img/popular-2-icon.min.svg" alt="Изображение раздела: Моноподы для селфи">
                   </p>
                   <h3 class="list-catalog__title">Моноподы для селфи</h3>
@@ -183,7 +198,7 @@
               </li>
               <li class="list-catalog__item">
                 <a class="list-catalog__link  list-catalog__link_3" href="#">
-                  <p class="list-catalog__img-inner">
+                  <p class="list-catalog__img-inner  list-catalog__img-inner_3">
                     <img class="list-catalog__img" width="71" height="87" src="img/popular-3-icon.min.svg" alt="Изображение раздела: Экшн-камеры">
                   </p>
                   <h3 class="list-catalog__title">Экшн-камеры</h3>
@@ -191,7 +206,7 @@
               </li>
               <li class="list-catalog__item">
                 <a class="list-catalog__link  list-catalog__link_4" href="#">
-                  <p class="list-catalog__img-inner">
+                  <p class="list-catalog__img-inner  list-catalog__img-inner_4">
                     <img class="list-catalog__img" width="107" height="65" src="img/popular-4-icon.min.svg" alt="Изображение раздела: Фитнес-браслеты">
                   </p>
                   <h3 class="list-catalog__title">Фитнес-браслеты</h3>
@@ -199,7 +214,7 @@
               </li>
               <li class="list-catalog__item">
                 <a class="list-catalog__link  list-catalog__link_5" href="#">
-                  <p class="list-catalog__img-inner">
+                  <p class="list-catalog__img-inner  list-catalog__img-inner_5">
                     <img class="list-catalog__img" width="56" height="98" src="img/popular-5-icon.min.svg" alt="Изображение раздела: Умные часы">
                   </p>
                   <h3 class="list-catalog__title">Умные часы</h3>
@@ -207,7 +222,7 @@
               </li>
               <li class="list-catalog__item">
                 <a class="list-catalog__link  list-catalog__link_6" href="#">
-                  <p class="list-catalog__img-inner">
+                  <p class="list-catalog__img-inner  list-catalog__img-inner_6">
                     <img class="list-catalog__img" width="132" height="69" src="img/popular-6-icon.min.svg" alt="Изображение раздела: Квадрокоптеры">
                   </p>
                   <h3 class="list-catalog__title">Квадрокоптеры</h3>
