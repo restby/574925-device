@@ -57,7 +57,7 @@ img {
   display: flex;
   background-color: rgba(240, 197, 46, 0.5);
   position: relative;
-  padding-top: 53px;
+  padding-top: 33px;
   padding-left: 60px;
   padding-right: 60px;
   align-items: flex-start;
@@ -77,8 +77,8 @@ img {
 .logo_header {
   position: absolute;
   top: 0;
-  left: 57px;
-  margin-top: -23px;
+  left: 58px;
+  margin-top: -24px;
 }
 .logo_header-link:hover,
 .logo_header-link:focus {
@@ -99,8 +99,8 @@ img {
   width: 16px;
   height: 2px;
   background-color: rgba(0,0,0,0.3);
-  right: 260px;
-  top: 80px;
+  right: 255px;
+  top: 81px;
   margin-top: 8px;
 }
 .page-header__left-col::before {
@@ -109,8 +109,8 @@ img {
   width: 16px;
   height: 2px;
   background-color: rgba(0,0,0,0.3);
-  right: 260px;
-  top: 80px;
+  right: 255px;
+  top: 81px;
   margin-top: 8px;
   transform: rotate(90deg);
 }
@@ -118,11 +118,11 @@ img {
   position: relative;
   display: flex;
   align-items: flex-start;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 .form-search__icon {
   position: absolute;
-  top: 21px;
+  top: 18px;
   left: 4px;
   cursor: pointer;
 }
@@ -135,7 +135,7 @@ img {
   font-weight: 300;
   letter-spacing: 0.01em;
   color: #000000;
-  height: 47px;
+  height: 49px;
   padding: 14px 19px;
   padding-left: 40px;
   box-sizing: border-box;
@@ -154,10 +154,11 @@ img {
 }
 .form-search__input:focus {
   border-bottom: 2px solid #000000;
+  outline: none;
 }
 .form-search__btn {
   width: 85px;
-  height: 47px;
+  height: 49px;
   border: 2px solid #000000;
   background-color: transparent;
   font-family: 'Open Sans', Arial, sans-serif;
@@ -208,6 +209,7 @@ img {
   flex-wrap: wrap;
   width: 500px;
   box-sizing: border-box;
+  padding-top: 10px;
 }
 .list-user {
   margin: 0;
@@ -216,11 +218,11 @@ img {
   display: flex;
   align-items: flex-start;
   width: 260px;
-  margin-right: 20px;
-  margin-bottom: 45px;
+  margin-right: 27px;
+  margin-bottom: 40px;
 }
 .list-user__icon_avatar {
-  margin-right: 13px;
+  margin-right: 9px;
 }
 .list-user__link {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -235,13 +237,14 @@ img {
   list-style: none;
   display: flex;
   align-items: flex-start;
-  width: 220px;
-  justify-content: space-between;/**/
   box-sizing: border-box;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
+}
+.list-cart__item_compare {
+  margin-right: 41px;
 }
 .list-cart__icon_compare {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 .list-cart__link {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -251,7 +254,7 @@ img {
   letter-spacing: 0.01em;
 }
 .list-cart__icon_cart {
-  margin-right: 11px;
+  margin-right: 6px;
 }
 .list-user__link:hover,
 .list-cart__link:hover,
@@ -265,7 +268,7 @@ img {
 }
 .main-navigation {
   width: 500px;
-  margin-bottom: 90px;
+  margin-bottom: 88px;
 }
 .list-navigation {
   margin: 0;
@@ -273,11 +276,10 @@ img {
   list-style: none;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;/**/
   box-sizing: border-box;
 }
 .list-navigation__item_delivery {
-  margin-right: 38px;
+  margin-right: 34px;
 }
 .list-navigation__link {
   font-family: "gilroyextrabold", Arial, sans-serif;
@@ -288,7 +290,7 @@ img {
   letter-spacing: 0.2em;
 }
 .list-navigation__item_warranty {
-  margin-right: 114px;
+  margin-right: 109px;
 }
 .menu {
   display: none;
@@ -300,10 +302,14 @@ img {
   display: flex;
   align-items: flex-start;
   position: absolute;
-  top: 165px;
-  left: 60px;
-  width: 1040px;
+  top: 150px;
+  left: 0;
+  width: 100%;
   background-color: #f7e296;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 7px;
+  box-sizing: border-box;
 }
 .menu__left-col {
   width: 200px;
@@ -320,7 +326,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
 }
 .list-menu__link {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -472,12 +478,11 @@ img {
   width: 4px;
   height: 4px;
   content: '';
-  top: 50%;
-  left: 50%;
-  margin-top: -3px;
-  margin-left: -3px;
+  top: 2px;
+  left: 2px;
   border: 1px solid #000000;
   border-radius: 50%;
+  padding: 0;
 }
 
 .catalog {
