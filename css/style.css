@@ -214,7 +214,7 @@ img {
 .page-header__right-col::after {
   position: absolute;
   content: '';
-  bottom: 67px;
+  bottom: 65px;
   left: 0;
   width: 100px;
   height: 7px;
@@ -263,7 +263,7 @@ img {
   letter-spacing: 0.01em;
 }
 .list-cart__icon_cart {
-  margin-right: 6px;
+  margin-right: 7px;
 }
 .list-user__link:hover,
 .list-cart__link:hover,
@@ -356,6 +356,8 @@ img {
 /*main*/
 .slider {
   display: block;
+  position: relative;
+  margin-bottom: 113px;
 }
 .list-slides {
   margin: 0;
@@ -383,6 +385,8 @@ img {
 }
 .list-slides__right-col {
   width: 560px;
+  position: relative;
+  padding-top: 101px;
 }
 .list-slides__item-img {
   position: absolute;
@@ -390,8 +394,8 @@ img {
   top: 0;
 }
 .list-slides__item-img_1 {
-  margin-top: -111px;
-  right: 87px;
+  margin-top: -109px;
+  right: 86px;
 }
 .list-slides__item-number {
   font-family: "gilroyextrabold", Arial, sans-serif;
@@ -404,7 +408,7 @@ img {
   position: absolute;
   right: 46px;
   top: 0;
-  margin-top: -123px;
+  margin-top: -121px;
 }
 .list-slides__item-title {
   font-family: "gilroyextrabold", Arial, sans-serif;
@@ -415,7 +419,10 @@ img {
   letter-spacing: 0.01em;
   color: #000000;
   margin: 0;
-  margin-bottom: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -29px;
 }
 .list-slides__item-desc {
   margin: 0;
@@ -424,7 +431,7 @@ img {
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 0.01em;
-  margin-bottom: 65px;
+  margin-bottom: 59px;
 }
 .link {
   display: block;
@@ -435,7 +442,7 @@ img {
 }
 .link_slides-link {
   width: 220px;
-  margin-bottom: 70px;
+  margin-bottom: 62px;
 }
 .link_slides-link::before {
   position: absolute;
@@ -447,10 +454,12 @@ img {
   width: 100%;
 }
 .list-slides__item-table {
+  padding: 0;
+  border-collapse: collapse;
 
 }
 .list-slides__item-tr {
-
+  padding: 0;
 }
 .list-slides__item_tr1 {
   font-family: 'gilroylight';
@@ -467,6 +476,13 @@ img {
   font-weight: 300;
   letter-spacing: 0.01em;
 }
+.list-slides__item-td {
+  padding: 0;
+  padding-top: 4px;
+}
+.list-slides__item_tr2 .list-slides__item-td {
+  padding-top: 7px;
+}
 .list-slides__item-td_1 {
   width: 160px;
 }
@@ -482,6 +498,9 @@ img {
   list-style: none;
   display: flex;
   align-items: flex-start;
+  position: absolute;
+  bottom: 134px;
+  right: 83px;
 }
 .list-controls__item_1 {
   margin-right: 21px;
@@ -530,9 +549,7 @@ img {
   width: 160px;
   height: 160px;
   background-color: rgba(240, 197, 46, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 34px;
 }
 .list-catalog__img-inner_2 {
   align-items: flex-end;
