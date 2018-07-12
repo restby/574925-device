@@ -156,6 +156,27 @@ img {
   border-bottom: 2px solid #000000;
   outline: none;
 }
+.form-search:focus-within .form-search__input
+{
+  border-bottom: 2px solid #000000;
+}
+/*visibility: hidden;
+
+.form-search__btn:hover,
+.form-search__btn:focus {
+  visibility: visible;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.form-search__input:focus ~ .form-search__btn {
+  visibility: visible;
+}
+
+.form-search:focus-within .form-search__btn {
+  visibility: visible;
+}
+*/
 .form-search__btn {
   width: 85px;
   height: 49px;
@@ -166,22 +187,34 @@ img {
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 0.01em;
-  display: none;
+  visibility: hidden;
   padding: 5px 20px;
   box-sizing: border-box;
 }
 .form-search__input:focus ~ .form-search__btn {
-  display: block;
+  visibility: visible;
 }
-.form-search__btn:hover,
+/*.form-search__btn:hover,
 .form-search__btn:focus {
   background-color: #000000;
   color: #ffffff;
+}*/
+.form-search__btn:hover,
+.form-search__btn:focus {
+  visibility: visible;
+  color: #ffffff;
+  background-color: #000000;
 }
 .form-search__btn:active {
   background-color: #000000;
   color: rgba(255,255,255,0.3);
 }
+.form-search:focus-within .form-search__btn {
+  visibility: visible;
+}
+
+
+
 .page-header__link {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
@@ -227,7 +260,7 @@ img {
   display: flex;
   align-items: flex-start;
   width: 260px;
-  margin-right: 26px;
+  margin-right: 25px;
   margin-bottom: 40px;
 }
 .list-user__icon_avatar {
@@ -709,6 +742,7 @@ img {
   display: flex;
   align-items: flex-start;
   margin-bottom: 98px;
+
 }
 .about__left-col {
   width: 560px;
