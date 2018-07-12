@@ -334,26 +334,54 @@
       </div>
     </main>
     <footer class="page-footer">
-
-      <!-- переразметить ФУТЕР!!!!!!!!!!! -->
       <div class="container">
-        <div class="page-footer__left-col">
+        <div class="page-footer__top-line">
           <span class="logo  logo_footer">DEVICE</span>
-          <p class="adress">г. Москва, ул. Строителей, 15</p>
-          <div class="page-footer__menu-line"></div>
-        </div>
-        <div class="page-footer__middle-col">
-          <ul class="list-nav-footer">
-            <li class="list-nav-footer__item  list-nav-footer__item_1">
-              <a class="list-nav-footer__link" href="#" aria-label="ссылка для перехода на страницу с информацией о доставке">ДОСТАВКА</a>
-            </li>
-            <li class="list-nav-footer__item  list-nav-footer__item_2">
-              <a class="list-nav-footer__link" href="#" aria-label="ссылка для перехода на страницу с информацией о нашей гарантии">ГАРАНТИЯ</a>
-            </li>
-            <li class="list-nav-footer__item  list-nav-footer__item_3">
-              <a class="list-nav-footer__link" href="#" aria-label="ссылка для перехода на страницу с информацией о наших контактах">КОНТАКТЫ</a>
+          <ul class="list-user">
+            <li class="list-user__item  list-user__item_login">
+              <a class="list-user__link  list-user__link_footer  list-user__link_enter" href="#" aria-label="ссылка на страницу с формой входа в личный кабинет">
+                <svg class="list-user__icon  list-user__icon_avatar" xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="#ffc600">
+                  <path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+                </svg>
+              Войти</a>
             </li>
           </ul>
+          <ul class="list-cart">
+            <li class="list-cart__item  list-cart__item_compare">
+              <a class="list-cart__link  list-cart__link_footer  list-cart__link_compare" href="#" aria-label="ссылка на страницу с выбраными для сравнения товарами">
+              <svg class="list-cart__icon  list-cart__icon_compare" xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#ffc600">
+                <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
+              </svg>
+            Сравнить</a>
+            </li>
+            <li class="list-cart__item  list-cart__item_cart">
+              <a class="list-cart__link  list-cart__link_footer  list-cart__link_cart" href="#" aria-label="ссылка для перехода на страницу корзины">
+              <svg class="list-cart__icon  list-cart__icon_cart" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#ffc600">
+                <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/>
+                <path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
+              </svg>
+            Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__middle-line">
+          <p class="adress">г. Москва, ул. Строителей, 15</p>
+          <nav class="main-navigation">
+            <ul class="list-navigation">
+              <li class="list-navigation__item  list-navigation__item_delivery">
+                <a class="list-navigation__link  list-navigation__link_delivery" href="#" aria-label="ссылка для перехода на страницу с информацией о доставке">ДОСТАВКА</a>
+              </li>
+              <li class="list-navigation__item  list-navigation__item_warranty">
+                <a class="list-navigation__link  list-navigation__link_warranty" href="#" aria-label="ссылка для перехода на страницу с информацией о нашей гарантии">ГАРАНТИЯ</a>
+              </li>
+              <li class="list-navigation__item  list-navigation__item_contacts">
+                <a class="list-navigation__link  list-navigation__link_contacts" href="#" aria-label="ссылка для перехода на страницу с информацией о наших контактах">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </nav>
+          <b class="footer-text">Тел.: +7 (495) 495-95-95</b>
+        </div>
+        <div class="page-footer__bottom-line">
           <ul class="list-social">
             <li class="list-social__item">
               <a href="#" class="list-social__link" aria-label="ссылка на нашу страницу в социальной сети facebook">
@@ -384,10 +412,30 @@
               </a>
             </li>
           </ul>
+          <p class="htmlacademy-logo-inner">
+            <svg class="htmlacademy-logo" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" fill="#ffc600">
+              <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+            </svg>
+          </p>
+        </div>
+
+
+
+        <!-- <div class="page-footer__middle-col">
+          <ul class="list-nav-footer">
+            <li class="list-nav-footer__item  list-nav-footer__item_1">
+              <a class="list-nav-footer__link" href="#" aria-label="ссылка для перехода на страницу с информацией о доставке">ДОСТАВКА</a>
+            </li>
+            <li class="list-nav-footer__item  list-nav-footer__item_2">
+              <a class="list-nav-footer__link" href="#" aria-label="ссылка для перехода на страницу с информацией о нашей гарантии">ГАРАНТИЯ</a>
+            </li>
+            <li class="list-nav-footer__item  list-nav-footer__item_3">
+              <a class="list-nav-footer__link" href="#" aria-label="ссылка для перехода на страницу с информацией о наших контактах">КОНТАКТЫ</a>
+            </li>
+          </ul>
         </div>
         <div class="page-footer__right-col">
-
-          <!-- <ul class="list-user_footer">
+          <ul class="list-user_footer">
             <li class="list-user__item  list-user__item_login">
               <a class="list-user__link  list-user__link_enter" href="#" aria-label="ссылка на страницу с формой входа в личный кабинет">
                 <svg class="list-user__icon  list-user__icon_avatar" xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="#272525">
@@ -412,8 +460,7 @@
               </svg>
             Корзина</a>
             </li>
-          </ul> -->
-
+          </ul>
           <ul class="list-footer-user">
             <li class="list-footer-user__item">
               <svg class="list-footer-user__icon  list-user__icon_avatar" xmlns="http://www.w3.org/2000/svg" width="13" height="12" fill="#ffc600">
@@ -435,13 +482,9 @@
               <a class="list-footer-user__link  list-footer-user__link_cart" href="#" aria-label="ссылка для перехода на страницу корзины">Корзина</a>
             </li>
           </ul>
-          <b class="footer-text">Тел.: +7 (495) 495-95-95</b>
-          <p class="htmlacademy-logo-inner">
-            <svg class="htmlacademy-logo" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" fill="#ffc600">
-              <path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
-            </svg>
-          </p>
-        </div>
+        </div> -->
+
+
       </div>
     </footer>
     <div class="modal-write">

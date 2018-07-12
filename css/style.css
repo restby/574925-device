@@ -531,7 +531,7 @@ img {
 }
 
 .catalog {
-  margin-bottom: 185px;
+  margin-bottom: 182px;
 }
 .list-catalog {
   margin: 0;
@@ -568,8 +568,8 @@ img {
 
 
 .features {
-  background-color: #e5e5e5;
   margin-bottom: 94px;
+  background-color: #e5e5e5;
 }
 .features .container {
   display: flex;
@@ -600,10 +600,15 @@ img {
   top: 0;
   margin-top: -4px;
 }
+.list-features__item_delivery {
+  margin-bottom: 55px;
+}
+.list-features__item_warranty {
+  margin-bottom: 57px;
+}
 .list-features__tab {
   border: 0;
   width: 160px;
-  margin-bottom: 50px;
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -642,7 +647,7 @@ img {
 
 .features__right-col {
   width: 760px;
-  margin-bottom: 150px;
+  margin-bottom: 137px;
 }
 .list-features-slides {
   margin: 0;
@@ -668,7 +673,8 @@ img {
   margin-bottom: 40px;
   position: absolute;
   top: 0;
-  margin-top: -30px;
+  left: 0;
+  margin-top: -27px;
 }
 .list-features-slides__desc {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -687,7 +693,7 @@ img {
 }
 
 .brends {
-  margin-bottom: 93px;
+  margin-bottom: 91px;
 }
 .list-brends {
   margin: 0;
@@ -702,13 +708,13 @@ img {
 .about {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 90px;
+  margin-bottom: 98px;
 }
 .about__left-col {
   width: 560px;
   margin-right: 40px;
   position: relative;
-  padding-top: 60px;
+  padding-top: 53px;
 }
 .about__left-col::before {
   position: absolute;
@@ -727,7 +733,7 @@ img {
   font-style: normal;
   letter-spacing: 0.01em;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 42px;
 }
 .about__text {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -738,16 +744,16 @@ img {
   color: #464646;
 }
 .about__text_1 {
-  margin-bottom: 40px;
+  margin-bottom: 29px;
 }
 .about__text_2 {
-  margin-bottom: 85px;
+  margin-bottom: 67px;
 }
 .list-transport-company {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 75px;
+  margin-bottom: 70px;
 }
 .list-transport-company__item {
   position: relative;
@@ -796,7 +802,7 @@ img {
 .about__right-col {
   width: 560px;
   position: relative;
-  padding-top: 60px;
+  padding-top: 53px;
 }
 .about__right-col::before {
   position: absolute;
@@ -808,11 +814,11 @@ img {
   left: 0;
 }
 .about__text_contacts {
-  margin-bottom: 45px;
+  margin-bottom: 39px;
 }
 .map-min-inner {
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 79px;
 }
 .link_write {
   width: 260px;
@@ -839,25 +845,28 @@ img {
 }
 .page-footer .container {
   padding-top: 65px;
+}
+.page-footer__top-line {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
-.page-footer__left-col {
-  width: 360px;
-  position: relative;
+.list-user {
+
 }
-.page-footer__left-col::after {
-  position: absolute;
-  content: '';
-  width: 80px;
-  height: 7px;
-  background-color: #ffc600;
-  bottom: 0;
-  left: 0;
+.list-cart {
+
 }
 .logo_footer {
   color: #ffc600;
   margin-bottom: 40px;
+}
+
+.list-user__link_footer {
+  color: #ffffff;
+}
+.list-cart__link_footer  {
+  color: #ffffff;
 }
 .adress {
   margin: 0;
@@ -868,27 +877,8 @@ img {
   font-weight: 300;
   color: #ffffff;
 }
-.page-footer__middle-col {
-  width: 440px;
-}
-.list-nav-footer {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 70px;
-}
-.list-nav-footer__item_1 {
-  margin-right: 35px
-}
-.list-nav-footer__item_2 {
-  margin-right: 33px;
-}
-.list-nav-footer__link {
-  color: #ffffff;
-  letter-spacing: 0.2em;
-}
+
+
 .list-social {
   margin: 0;
   padding: 0;
@@ -903,12 +893,6 @@ img {
 .list-social__icon {
   opacity: 0.3;
 }
-
-
-.page-footer__right-col {
-  width: 360px;
-}
-
 
 
 .footer-text {
