@@ -489,25 +489,35 @@
     </footer>
     <div class="modal-write">
       <h2 class="visually-hidden">Форма отправки письма</h2>
-      <button class="btn btn_close-modal-write" type="button" aria-label="кнопка закрыть форму отправки письма">Закрыть</button>
+      <button class="btn btn_close-modal-write" type="button" aria-label="кнопка закрыть форму отправки письма">
+        <span class="visually-hidden">Закрыть</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="#F0C52E">
+          <path d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
+        </svg>
+      </button>
       <form class="form-write" action="https://echo.htmlacademy.ru" method="POST" aria-label="форма отправки письма">
-        <p class="form-write__item">
+        <p class="form-write__item  form-write__item_name">
           <label class="form-write__title" for="name">Ваше имя:</label>
           <input class="form-write__input" type="text" id="name" name="name" placeholder="Имя Фамилия" aria-label="поле для ввода вашего имени и фамилии">
         </p>
-        <p class="form-write__item">
+        <p class="form-write__item  form-write__item_email">
           <label class="form-write__title" for="email">Ваш e-mail:</label>
           <input class="form-write__input" type="text" id="email" name="email" placeholder="email@example.com" aria-label="поле для ввода вашего электронного ящика">
         </p>
-        <p class="form-write__item">
+        <p class="form-write__item  form-write__item_area">
           <label class="form-write__title" for="mail-text">Текст письма:</label>
-          <textarea class="form-write__input  form-write__input_area" name="mail-text" id="mail-text" cols="50" rows="5" placeholder="В свободной форме" aria-label="поле для ввода текста вашего письма"></textarea>
+          <textarea class="form-write__input  form-write__input_area" name="mail-text" id="mail-text" cols="1" rows="1" placeholder="В свободной форме" aria-label="поле для ввода текста вашего письма"></textarea>
         </p>
-        <button class="link link__submit-form-write" type="submit" aria-label="кнопка отправить ваше письмо">Отправить</button>
+        <button class="link link__submit-form-write" type="submit" aria-label="кнопка отправить ваше письмо"></button>
       </form>
     </div>
     <div class="modal-map">
-      <button class="btn btn_close-modal-map" type="button" aria-label="кнопка закрыть карту">Закрыть</button>
+      <button class="btn btn_close-modal-map" type="button" aria-label="кнопка закрыть карту">
+        <span class="visually-hidden">Закрыть</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="#F0C52E">
+          <path d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/>
+        </svg>
+      </button>
       <p class="map-big-inner">
         <img class="static-big-map" width="960" height="559" src="img/map-big-img.jpg" alt="г. Москва, улица Строителей, д. 15">
       </p>

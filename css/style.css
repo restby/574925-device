@@ -877,8 +877,6 @@ img {
   font-weight: 300;
   color: #ffffff;
 }
-
-
 .list-social {
   margin: 0;
   padding: 0;
@@ -893,8 +891,6 @@ img {
 .list-social__icon {
   opacity: 0.3;
 }
-
-
 .footer-text {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
@@ -912,3 +908,118 @@ img {
 }
 
 /*footer*/
+/*modal-write*/
+.modal-write {
+  display: none;
+  width: 960px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 55px;
+  background-color: #ccc;
+  position: fixed;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+.btn_close-modal-write {
+  border: 0;
+  background-color: transparent;
+  opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+.btn_close-modal-write:hover,
+.btn_close-modal-write:focus {
+  opacity: 1;
+}
+.btn_close-modal-write:focus {
+  opacity: 0.3;
+}
+.form-write {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.form-write__item {
+  width: 360px;
+  margin: 0;
+}
+.form-write__item_name {
+  margin-right: 40px;
+  margin-bottom: 37px;
+}
+.form-write__item_email {
+  margin-bottom: 37px;
+}
+.form-write__item_area {
+  width: 100%;
+  margin-bottom: 53px;
+}
+.form-write__title {
+  display: block;
+  margin-bottom: 10px;
+}
+.form-write__input {
+  width: 100%;
+  height: 50px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #464646;
+  border: 0;
+  background-color: rgba(242,242,242,0.5);
+  padding: 16px 19px;
+  box-sizing: border-box;
+}
+.form-write__input:placeholder {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(70,70,70,0.4);
+}
+.form-write__input_area {
+  min-height: 156px;
+}
+.link__submit-form-write {
+  width: 220px;
+  margin-bottom: 62px;
+  border: 0;
+}
+.link__submit-form-write::before {
+  position: absolute;
+  content: 'ОТПРАВИТЬ';
+  letter-spacing: 0.2em;
+  left: 0;
+  top: 0;
+  margin-top: -7px;
+  width: 100%;
+}
+/*modal-write*/
+/*modal-map*/
+.modal-map {
+  display: none;
+  position: fixed;
+  width: 960px;
+  height: 559px;
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+.btn_close-modal-map {
+  border: 0;
+  background-color: transparent;
+  opacity: 0.5;
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+.btn_close-modal-map:hover,
+.btn_close-modal-map:focus {
+  opacity: 1;
+}
+.btn_close-modal-map:focus {
+  opacity: 0.3;
+}
+/*modal-map*/
